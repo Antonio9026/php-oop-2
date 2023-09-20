@@ -6,7 +6,7 @@ class Prodotti{
    private $titolo;
    private $peso;
    private $prezzo;
-   private  $categoria;
+   private $categoria;
 
 
    public function __construct($titolo,$peso,$prezzo, $categoria) {

@@ -4,7 +4,7 @@ class Cibo extends Prodotti {
     private $img;
     private $descrizione;
    private $scadenza;
-
+   
 
 
 public function __construct($titolo,$descrizione,$peso,$prezzo,$img,$scadenza,$categoria) {
@@ -13,6 +13,7 @@ public function __construct($titolo,$descrizione,$peso,$prezzo,$img,$scadenza,$c
   $this->setImg($img);
   $this->setDescrizione($descrizione);
   $this->setScadenza($scadenza);
+ 
 }
 
 
@@ -26,7 +27,7 @@ public function setImg($img){
 }
 public function getDescrizione(){
 
-    return $this->scadenza;
+    return $this->descrizione;
 }
 public function setDescrizione($descrizione){
     $this->descrizione = $descrizione;
@@ -40,7 +41,5 @@ public function setScadenza($scadenza){
     $this->scadenza = $scadenza;
     return $this;
 }
-
 }
-
 ?>

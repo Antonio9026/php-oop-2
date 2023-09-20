@@ -12,9 +12,27 @@ require_once "./db/db.php"
     <title>Document</title>
 </head>
 <body>
-  
-
-
-  
+  <?php
+  foreach($cibi as $cibo){;
+  ?>
+  <div class="container">
+    <div class="card">
+        <div class="img-container">
+            <img src="<?php echo $cibo->getImg()?>" alt="">
+        </div>
+        <div class="info">
+            <h3><?php echo $cibo->getTitolo()?></h3>
+            <p><?php echo $cibo->getDescrizione()?></p>
+            <p><?php echo $cibo->getPeso()?></p>
+            <p><?php echo $cibo->getPrezzo()?></p>
+            <p><?php echo $cibo->getScadenza()?></p>
+            
+            
+        </div>
+    </div>
+  </div>
+  <?php
+    
+  }?>
 </body>
 </html>

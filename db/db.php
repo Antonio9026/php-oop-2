@@ -6,9 +6,9 @@ require_once "./classi/giochi.php";
 require_once "./classi/cibo.php";
 
 $Cane = new Categoria("cane"," <i class='fa-solid fa-dog'></i> ");
-var_dump($Cane);
+// var_dump($Cane);
 $Gatto = new Categoria("gatto","<i class='fa-solid fa-cat'></i>");
-var_dump($Gatto);
+// var_dump($Gatto);
 
 $prodotto1 = new Prodotti( "prodotto1",40, 25,$Cane);
 var_dump($prodotto1);
