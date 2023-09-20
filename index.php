@@ -1,5 +1,8 @@
 <?php
-
+require_once "./classi/prodotti.php";
+require_once "./classi/categorie.php";
+require_once "./classi/giochi.php";
+require_once "./classi/cibo.php";
 
 ?>
 
@@ -12,6 +15,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+  <h1><?php echo $prodotto1->getTitolo() ?></h1>
 </body>
 </html>
