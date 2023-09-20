@@ -15,6 +15,9 @@ require_once "./classi/cibo.php";
     <title>Document</title>
 </head>
 <body>
+  
 
+<!-- <img src="<?php echo $gioco1->getImg() ?>" alt=""> -->
+  
 </body>
 </html>
