@@ -23,9 +23,33 @@ require_once "./db/db.php"
         <div class="info">
             <h3><?php echo $cibo->getTitolo()?></h3>
             <p><?php echo $cibo->getDescrizione()?></p>
-            <p><?php echo $cibo->getPeso()?></p>
-            <p><?php echo $cibo->getPrezzo()?></p>
-            <p><?php echo $cibo->getScadenza()?></p>
+            <p><?php echo $cibo->getPeso()?> kg</p>
+            <p><?php echo $cibo->getPrezzo()?> €</p>
+            
+            
+            
+        </div>
+    </div>
+  </div>
+  <?php
+    
+  }?>
+
+<?php
+  foreach($giochi as $gioco){;
+  ?>
+  <div class="container">
+    <div class="card">
+        <div class="img-container">
+            <img src="<?php echo $gioco->getImg()?>" alt="">
+        </div>
+        <div class="info">
+            <h3><?php echo $gioco->getTitolo()?></h3>
+            
+            <p><?php echo $gioco->getPeso() ?> kg</p>
+            <p><?php echo $gioco->getPrezzo()?> €</p>
+            <p><?php echo $gioco->getColore()?></p>
+           
             
             
         </div>
@@ -36,3 +60,5 @@ require_once "./db/db.php"
   }?>
 </body>
 </html>
+
+   <!-- <p><?php echo $gioco->getCategoria()?></p> -->

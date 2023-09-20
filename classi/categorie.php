@@ -2,8 +2,8 @@
 
 class Categoria{
 
-    private $nome;
-    private $icona;
+    public $nome;
+    public $icona;
 
 
   public function __construct($nome,$icona) {
