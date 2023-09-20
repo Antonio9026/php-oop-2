@@ -1,8 +1,5 @@
 <?php
-require_once "./classi/prodotti.php";
-require_once "./classi/categorie.php";
-require_once "./classi/giochi.php";
-require_once "./classi/cibo.php";
+require_once "./db/db.php"
 
 ?>
 
@@ -17,7 +14,7 @@ require_once "./classi/cibo.php";
 <body>
   
 
-<!-- <img src="<?php echo $gioco1->getImg() ?>" alt=""> -->
+
   
 </body>
 </html>

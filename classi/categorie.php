@@ -28,7 +28,4 @@ class Categoria{
 
   
 }
-$Cane = new Categoria("cane"," <i class='fa-solid fa-dog'></i> ");
-var_dump($Cane);
-$Gatto = new Categoria("gatto","<i class='fa-solid fa-cat'></i>");
-var_dump($Gatto);
+

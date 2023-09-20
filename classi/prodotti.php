@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/categorie.php";
 
+
 class Prodotti{
    private $titolo;
    private $peso;
@@ -55,7 +56,5 @@ class Prodotti{
 }
 
 
- $prodotto1 = new Prodotti( "prodotto1",40, 25,$Cane);
-var_dump($prodotto1)
 
 ?>
