@@ -7,7 +7,7 @@ class Prodotti{
    private $prezzo;
 
 
-   public function __construct( $titolo,$peso,$prezzo) {
+   public function __construct($titolo,$peso,$prezzo) {
 
    
     $this->setTitolo($titolo);
