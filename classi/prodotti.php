@@ -5,15 +5,16 @@ class Prodotti{
    private $titolo;
    private $peso;
    private $prezzo;
+   private  $categoria;
 
 
-   public function __construct($titolo,$peso,$prezzo) {
+   public function __construct($titolo,$peso,$prezzo, $categoria) {
 
    
     $this->setTitolo($titolo);
     $this->setPeso($peso);
     $this->setPrezzo($prezzo);
-   
+    $this->setCategoria($categoria);
    }
 
    public function getPeso(){
@@ -36,19 +37,25 @@ class Prodotti{
   
 
    public function getPrezzo(){
-    return $this->titolo;
+    return $this->prezzo;
    }
    public function setPrezzo($prezzo){
      $this->prezzo = $prezzo;
      return $this;
    }
-
+   public function getCategoria(){
+    return $this->categoria;
+   }
+   public function setCategoria($categoria){
+     $this->categoria = $categoria;
+     return $this;
+   }
  
 
 }
 
 
- $prodotto1 = new Prodotti( "prodotto1",40, 25);
+ $prodotto1 = new Prodotti( "prodotto1",40, 25,$Cane);
 var_dump($prodotto1)
 
 ?>
