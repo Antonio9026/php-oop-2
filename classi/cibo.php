@@ -1,9 +1,10 @@
 <?php
-
+require_once "./classi/categorie.php";
 class Cibo extends Prodotti {
     private $img;
     private $descrizione;
    private $scadenza;
+   
    
 
 
@@ -13,6 +14,7 @@ public function __construct($titolo,$descrizione,$peso,$prezzo,$img,$scadenza,$c
   $this->setImg($img);
   $this->setDescrizione($descrizione);
   $this->setScadenza($scadenza);
+
  
 }
 

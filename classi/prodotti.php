@@ -1,30 +1,26 @@
 <?php
 require_once __DIR__ . "/categorie.php";
-
+require_once "./traits/WithTaglia.php";
 
 class Prodotti{
+    use WithTaglia;
    private $titolo;
-   private $peso;
    private $prezzo;
    private  $categoria;
+   private $peso;
+
 
 
    public function __construct($titolo,$peso,$prezzo, $categoria) {
 
    
     $this->setTitolo($titolo);
-    $this->setPeso($peso);
     $this->setPrezzo($prezzo);
     $this->setCategoria($categoria);
+    $this->setPeso($peso);
    }
 
-   public function getPeso(){
-    return $this->peso;
-   }
-   public function setPeso($peso){
-     $this->peso = $peso;
-     return $this;
-   }
+  
 
 
    public function getTitolo(){
