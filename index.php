@@ -15,61 +15,74 @@ require_once "./db/db.php";
 </head>
 
 <body>
-    <div class="container">
-        <?php
-        foreach ($cibi as $cibo) {;
-        ?>
+    <header>
+        <div class="header-container">
+            <h1>My pet shop</h1>
+        </div>
 
-            <div class="card">
-                <div class="card-wrapper">
-                    <div class="img-container">
-                        <img src="<?php echo $cibo->getImg() ?>" alt="">
-                    </div>
-                    <div class="info">
-                        <h3><?php echo $cibo->getTitolo() ?></h3>
-                        <p><?php echo $cibo->getDescrizione() ?></p>
-                        <p><?php echo $cibo->getPeso() ?> g</p>
-                        <p><?php echo $cibo->getPrezzo() ?> €</p>
-                        <p><?php echo $cibo->getCategoria()->icona ?></p>
-                        
+    </header>
+    <main>
+        <div class="container">
+            <?php
+            foreach ($cibi as $cibo) {;
+            ?>
 
-
-
-                    </div>
-                </div>
-            </div>
-        <?php
-
-        } ?>
-    </div>
-
-    <div class="container">
-        <?php
-        foreach ($giochi as $gioco) {;
-        ?>
-
-            <div class="card">
-                <div class="card-wrapper">
-                    <div class="img-container">
-                        <img src="<?php echo $gioco->getImg() ?>" alt="">
-                    </div>
-                    <div class="info">
-                        <h3><?php echo $gioco->getTitolo() ?></h3>
-                        <p><?php echo $gioco->getPeso() ?> g</p>
-                        <p><?php echo $gioco->getPrezzo() ?> €</p>
-                        <p><?php echo $gioco->getColore() ?></p>
-                        <p><?php echo $gioco->getCategoria()->icona ?></p>
-                     
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="img-container">
+                            <img src="<?php echo $cibo->getImg() ?>" alt="">
+                        </div>
+                        <div class="info">
+                            <h3><?php echo $cibo->getTitolo() ?></h3>
+                            <p><?php echo $cibo->getDescrizione() ?></p>
+                            <p><?php echo $cibo->getPeso() ?> g</p>
+                            <p><?php echo $cibo->getPrezzo() ?> €</p>
+                            <p><?php echo $cibo->getCategoria()->icona ?></p>
 
 
+
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php
 
-        <?php
+            } ?>
+        </div>
 
-        } ?>
-    </div>
+        <div class="container">
+            <?php
+            foreach ($giochi as $gioco) {;
+            ?>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="img-container">
+                            <img src="<?php echo $gioco->getImg() ?>" alt="">
+                        </div>
+                        <div class="info">
+                            <h3><?php echo $gioco->getTitolo() ?></h3>
+                            <p><?php echo $gioco->getPeso() ?> g</p>
+                            <p><?php echo $gioco->getPrezzo() ?> €</p>
+                            <p><?php echo $gioco->getColore() ?></p>
+                            <p><?php echo $gioco->getCategoria()->icona ?></p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            <?php
+
+            } ?>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
 </body>
 
 </html>
