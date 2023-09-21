@@ -20,11 +20,11 @@ try {
         
         $cibo1 = new Cibo("Purina Pro Plan"," Light Sterilised All Size Adult Crocchette Cani",1400,53.99,"https://m.media-amazon.com/images/I/71duEL4dP6L.__AC_SX300_SY300_QL70_ML2_.jpg","26/02/2030",$Cane,),
         // var_dump($cibo1)
-        $cibo2 = new Cibo("Stuzzy","Cibo Umido per Cani Adulti al Gusto Agnello e Risoin Pezzi ",12,18.70,"https://m.media-amazon.com/images/I/71681lYCO2L._AC_SL1500_.jpg","26/02/2030",$Cane,),
+        $cibo2 = new Cibo("Stuzzy","Cibo Umido per Cani Adulti al Gusto Agnello e Risoin Pezzi ",120,18.70,"https://m.media-amazon.com/images/I/71681lYCO2L._AC_SL1500_.jpg","26/02/2030",$Cane,),
         // var_dump($cibo2),
         $cibo3 = new Cibo("Venandi Animal","Cibo secco per gatti Premium Salmone senza cereali con un sacco di salmone fresco",1500,17.62,"https://m.media-amazon.com/images/I/61Td69cmbKL._AC_SL1500_.jpg","26/02/2030",$Gatto,),
         // var_dump($cibo3),
-        $cibo4 = new Cibo("Purina Felix","Le Ghiottonerie Cibo Umido per Gatti con Manzo, Pollo, Merluzzo e Tonno,",4200,36.99,"https://m.media-amazon.com/images/I/51F96nF7vNL._AC_.jpg","26/02/2030",$Gatto,)
+        $cibo4 = new Cibo("Purina Felix","Le Ghiottonerie Cibo Umido per Gatti con Manzo, Pollo, Merluzzo e Tonno,",4300,36.99,"https://m.media-amazon.com/images/I/51F96nF7vNL._AC_.jpg","26/02/2030",$Gatto,)
         // var_dump($cibo4)
         ];
     } catch (Exception $e) { 

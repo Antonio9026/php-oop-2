@@ -1,6 +1,8 @@
 <?php
 require_once "./classi/categorie.php";
+
 class Cibo extends Prodotti {
+    
     private $img;
     private $descrizione;
    private $scadenza;

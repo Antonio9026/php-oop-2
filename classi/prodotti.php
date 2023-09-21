@@ -7,7 +7,7 @@ class Prodotti{
    private $titolo;
    private $prezzo;
    private  $categoria;
-   private $peso;
+  //  private $peso;
 
 
 
