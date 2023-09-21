@@ -49,7 +49,7 @@ require_once "./db/db.php"
             <p><?php echo $gioco->getPeso() ?> kg</p>
             <p><?php echo $gioco->getPrezzo()?> €</p>
             <p><?php echo $gioco->getColore()?></p>
-           
+           <p><?php echo $gioco->getCategoria()->nome?></p>
             
             
         </div>
@@ -61,4 +61,4 @@ require_once "./db/db.php"
 </body>
 </html>
 
-   <!-- <p><?php echo $gioco->getCategoria()?></p> -->
+   
