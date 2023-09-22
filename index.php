@@ -22,6 +22,7 @@ require_once "./db/db.php";
 
     </header>
     <main>
+        <p><?php echo implode($errors) ?></p>
         <div class="container">
             <?php
             foreach ($cibi as $cibo) {;
